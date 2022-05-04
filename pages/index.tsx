@@ -1,19 +1,20 @@
-// import type { NextPage } from 'next'
+import type { NextPage } from 'next'
 import Head from 'next/head';
-import Image from 'next/image';
 import { useState } from 'react';
 import Magic from '../components/Magic';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
-  // list of inputs to be displayed in the Triplet
+  // list of inputs to be displayed in the component
   const [ inputs, setInputs ] = useState([
     false,
     [ 'item 1', 'item 2', 'item 3' ],
     {
       name: 'James Zhang',
       school: 'University of Wisconsin-Madison',
-      grade: 'Junior'
+      grade: 'Junior',
+      GitHub: 'github.com/jameszhang-a',
+      LinkedIn: 'linkedin.com/in/jameszhanga'
     }
   ]);
 
